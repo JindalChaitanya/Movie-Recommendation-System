@@ -1,0 +1,49 @@
+{% extends 'recommender/base.html' %}
+{% load static %}
+
+{% block css1 %}
+    <link rel="stylesheet" href="{% static 'recommender/page.css' %}" type="text/css">
+{% endblock css1 %}
+
+{% block content %}
+<div class="main-container">
+    <div class="two">
+        <h1><span class="add-text-background">Movie</span> Recommendation System</h1>
+        <p class="subheading">Check out these great movies that recommended for you.</p>
+        <form method="POST">    
+            {% csrf_token %}
+            <div class="formcontainer">
+                <input class="input-field" type="text" id="movie_name" name="movie_name"
+                    placeholder="Start typing to see movie suggestions..." required />
+                <script>
+                    $(function() {
+                        var availableTags = [
+                            {% for mmm in all_movie_names %}
+                            "{{ mmm }}",
+                        {% endfor %}
+                    ];
+                    $("#movie_name").autocomplete({
+                        source: availableTags,
+                        minLength: 3
+                    });
+                } );
+                </script>
+                <button type="submit" class="submit-button">Search</button>
+            </div>
+        </form>
+        <p class="message">
+            {% if input_provided %}
+                <div>
+                    {% if not movie_found %}
+                        <p class="message__result">You Searched For: <b>{{ input_movie_name }}</b></p>
+                        {% if not recomendation_found %}
+                            <p class="message__p1">Oops! We can not match your movie in our database.</p>
+                            <p class="message__p2">As this is a demo model.</p>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            {% endif %}
+        </p>
+    </div>
+</div>
+    {% endblock content %}

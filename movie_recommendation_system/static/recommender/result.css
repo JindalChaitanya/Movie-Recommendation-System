@@ -1,0 +1,96 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    max-height: 100vh;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    overflow-x: hidden;
+    z-index: 100;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0) !important;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    
+    max-width: auto;
+
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    text-align: center;
+    justify-content: center;
+}
+
+  /* Card Container */
+  .card-container {
+      width: 350px;
+      margin: 0.5rem auto;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 2%;
+      flex-basis: 25%;
+  }
+  
+  .card-header {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+  
+  .card-para {
+      font-size: 16px;
+      line-height: 1.5em;
+      margin-bottom: 10px;
+  }
+  
+  .card-link {
+      display: inline-block;
+      font-size: 16px;
+      color: #4193c5;
+      text-decoration: none;
+      margin-top: 10px;
+  }
+  
+  .card-link:hover {
+      text-decoration: underline;
+  }
+  
+  .title-container {
+      text-align: center;
+      padding: 1rem 0.5rem;
+      margin: 0 auto;
+      position: relative;
+      background-color: transparent;
+      top: 0;
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+      width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background: #353535;
+  }

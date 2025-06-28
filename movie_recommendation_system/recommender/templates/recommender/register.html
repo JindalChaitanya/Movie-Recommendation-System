@@ -1,0 +1,46 @@
+{% extends 'recommender/base.html' %}
+{% load static %}
+
+{% block css1 %}
+  <!-- Additional CSS for the register page -->
+  <!-- <link rel="stylesheet" href="{% static 'recommender/register.css' %}" type="text/css"> -->
+{% endblock css1 %}
+
+{% block content %}
+  <div class="container mt-5">
+    <h2>Register</h2>
+    <form method="post" action="{% url 'u_reg' %}">
+      {% csrf_token %}
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" name="email"  class="form-control" required><br>
+      </div>
+        
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" name="username"  class="form-control" required><br>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" name="password"  class="form-control" required><br>
+      </div>
+
+      <div class="form-group">
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname"  class="form-control" required><br>
+      </div>
+        
+      <div class="form-group">
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname"  class="form-control" required><br>
+      </div>
+
+        <input type="submit" class="btn btn-primary" value="Register">
+  </form>
+      <div class="mt-3">
+        <p>Already have an account? <a href="{% url 'u_login' %}">Login here</a></p>
+      </div>
+  </div>
+{% endblock content %}

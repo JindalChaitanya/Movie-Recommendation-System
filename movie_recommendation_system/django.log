@@ -1,0 +1,50 @@
+Watching for file changes with StatReloader
+C:\Users\JChaitanya\OneDrive\Django-Projects\OLD Movie Recommendation System\movie_recommendation_system\recommender\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 732701
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 3370
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 732701
+"POST / HTTP/1.1" 200 9298
+"GET /static/recommender/results.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 732701
+C:\Users\JChaitanya\OneDrive\Django-Projects\OLD Movie Recommendation System\movie_recommendation_system\movie_recommendation_system\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 732701
+C:\Users\JChaitanya\OneDrive\Django-Projects\OLD Movie Recommendation System\movie_recommendation_system\recommender\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 732701
+C:\Users\JChaitanya\OneDrive\Django-Projects\OLD Movie Recommendation System\movie_recommendation_system\recommender\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 732701
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2928
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 3370
+"POST /login/ HTTP/1.1" 200 3389
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 3370
+"GET /static/recommender/result.css HTTP/1.1" 404 1926
+"GET /static/recommender/navbar.css HTTP/1.1" 200 6009
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2928
+"POST /login/ HTTP/1.1" 200 3389
+"GET /static/recommender/result.css HTTP/1.1" 404 1926
+"GET /register/ HTTP/1.1" 200 3921
+"GET /static/recommender/result.css HTTP/1.1" 404 1926
+"POST /register/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 732701
+"GET /static/recommender/result.css HTTP/1.1" 404 1926
+"GET /static/recommender/page.css HTTP/1.1" 200 2200
+"POST / HTTP/1.1" 200 9298
+"GET /static/recommender/result.css HTTP/1.1" 404 1926
+"GET /static/recommender/results.css HTTP/1.1" 200 1631
+"GET / HTTP/1.1" 200 732701
+"GET /static/recommender/result.css HTTP/1.1" 404 1926
+"POST / HTTP/1.1" 200 9447
+"GET /static/recommender/result.css HTTP/1.1" 404 1926
+Watching for file changes with StatReloader

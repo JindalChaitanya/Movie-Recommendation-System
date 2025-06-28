@@ -1,2 +1,5 @@
 .ipynb_checkpoints/Python_Internship_Documentation-checkpoint.ipynb
 /.ipynb_checkpoints
+*.parquet
+Dataset/credits.csv
+Dataset/ratings.csv

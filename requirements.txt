@@ -1,0 +1,10 @@
+wheel
+django
+pandas
+gunicorn
+whitenoise
+fastparquet
+pyarrow
+jupyter
+matplotlib
+scikit-learn
