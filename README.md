@@ -75,7 +75,7 @@ Follow these steps to set up the project locally.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/movie-recommendation-system.git
+git clone https://github.com/JindalChaitanya/movie-recommendation-system.git
 cd movie-recommendation-system
 ```
 
